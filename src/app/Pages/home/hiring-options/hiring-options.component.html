@@ -1,0 +1,48 @@
+<!-- Full atime and part time job hours -->
+<mat-card class="card-section">
+    <!-- First Card -->
+    <mat-card id="col_crd_1" class="column-card">
+        <mat-card-title>
+            Flexible Hiring Options
+            <div class="highlight">That give you an extra edge</div>
+        </mat-card-title>
+
+    </mat-card>
+
+    <!-- Second Card and this is a container -->
+    <mat-card class="card-section cont_aval">
+        <!-- 1st card -->
+        <mat-card class="cards">
+            <mat-card-title>Full-Time Hiring</mat-card-title>
+            <mat-icon>schedule</mat-icon>
+            <mat-card-content>
+                <ul>
+                    <li>176 hours a month</li>
+                    <li>8 hours a day, 5 days a week</li>
+                    <li>Free consultation</li>
+                    <li>Deliver an exceptional experience</li>
+                </ul>
+            </mat-card-content>
+            <!-- <button class="btn_link" mat-button>
+                Hire Full-Time
+            </button> -->
+            <app-button [routerLink]="'/contact'" [button]="'Hire Full-Time'"> </app-button>
+        </mat-card>
+        <!-- 2nd card -->
+        <mat-card class="cards">
+            <mat-card-title>Part-Time Hiring</mat-card-title>
+            <mat-icon>hourglass_empty</mat-icon>
+            <mat-card-content>
+                <ul>
+                    <li>88 hours a month</li>
+                    <li>4 hours a day, 5 days a week</li>
+                    <li>Free consultation</li>
+                    <li>Deliver an exceptional experience</li>
+                </ul>
+            </mat-card-content>
+            <!-- <button class="btn_link" mat-button>
+                Hire Part-Time
+            </button> -->
+            <app-button [routerLink]="'/contact'" [button]="'Hire Part-Time'"> </app-button>
+        </mat-card>
+    </mat-card>

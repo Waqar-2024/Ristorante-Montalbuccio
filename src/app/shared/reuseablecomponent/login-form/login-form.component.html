@@ -1,0 +1,53 @@
+<!-- for maske sure page take 100 vh minimum  -->
+<div class="login-page">
+<!-- Header Componenr -->
+<app-header></app-header>
+
+<!-- start login form -->
+ <!-- Form wrap in this div -->
+<div class="form_cnt">
+    <div class="container" >
+        <form class="log-in" #form="ngForm">
+            <h1 class="heading">Log In</h1>
+
+
+            <!-- container email form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/DZBPRgvC/email.png" alt="icon" height="12">
+                    <input type="email" #email="ngModel" [(ngModel)]="form_data.email" email  name="email" placeholder="Email">
+                </div>
+
+            </div>
+
+            <!-- container password form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/Nj5SDK4q/password.png" alt="icon" height="20">
+                    <input type="password" #password="ngModel" [(ngModel)]="form_data.password" name="password" required minlength="8" placeholder="Password">
+                </div>
+
+            </div>
+
+
+            <br>
+            <button (click)="submit_Form(form)" [disabled]="form.invalid" type="submit">LOG IN</button>
+            <p class="conditions">Don't have an account? 
+                <!-- <a class="for_signIn" href="#">Sign in</a> -->
+                <a class="for_signIn"  mat-button [routerLink]="'/contact'">Sign up</a>
+            </p>
+
+        </form>
+
+        <!-- Text container -->
+        <div class="text-container">
+            <h1>Welcome Back!</h1>
+            <p>Please enter your details to log in and continue.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer Component -->
+<app-footer></app-footer>
+</div>

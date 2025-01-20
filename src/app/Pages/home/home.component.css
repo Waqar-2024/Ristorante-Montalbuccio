@@ -1,0 +1,116 @@
+/*  text and image Cards container css  */
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* text card and image card both css */
+.text-card, 
+app-image-slider {
+    flex: 1 1 0; 
+    width: 47%;
+}
+
+/* only text card css */
+.text-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border-radius: 8px;
+    padding:  26px;
+}
+
+/* css text card p section for better reading experience */
+.text-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* text card heading css  */
+.text-card mat-card-title {
+    font-size: 33px;
+    font-weight: bold;
+    color: #e50914;
+}
+
+
+/* image slider */
+app-image-slider  {
+    width: 100%;
+    /* max-height: 500px; */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* button css  */
+.btn_link {
+    background-color: #e72929;
+    border-radius: 1rem;
+    opacity: 1;
+    color: #fff !important;
+   padding: 25px !important;
+}
+
+/* text card link style when hover  */
+.btn_link:hover {
+    opacity: 1.1;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /* Stack cards vertically */
+    .cards-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Full width for smaller screens */
+    .text-card
+     {
+        max-width: 100%;
+        margin-bottom: 6px;
+        width: 100%;
+    }
+
+    /* image slider in small width */
+    app-image-slider{
+        height: 350px ;
+        flex: auto;
+        width: 100%; 
+    }
+
+    /* heading for margin auto */
+    .text-card mat-card-header {
+        font-size: 1;
+        margin: auto;
+    }
+
+    /* for paragraph text center */
+    .text-card p {
+        font-size: 1.2rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    /* in text container text and button for text align center */
+    .text-card mat-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* text card heading css  */
+    .text-card mat-card-title {
+        font-size: 25px;
+        text-align: center;
+    }
+
+}

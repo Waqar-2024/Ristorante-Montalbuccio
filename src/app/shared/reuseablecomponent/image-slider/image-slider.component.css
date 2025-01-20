@@ -1,0 +1,66 @@
+/* main div */
+.slides {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* container which has images */
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* all dots under this */
+#indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    width: 100px;
+}
+
+/* dots when click then image change */
+#indicators .indicator {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* which dot is active */
+#indicators .indicator.active {
+    background-color: #e72929;
+}
+
+/* arrow marks */
+.nextButton,
+.previousButton {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+    color: white;
+}
+
+/* arrow next button */
+.nextButton {
+    right: 20px;
+}
+
+/* arrow  previous button  */
+.previousButton {
+    left: 20px;
+}

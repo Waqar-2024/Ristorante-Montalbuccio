@@ -1,0 +1,36 @@
+<!-- load header component -->
+<app-header></app-header> 
+
+<!-- Work for home section -->
+<div class="cards-container">
+    <!-- text card it has heading + para + button -->
+    <mat-card class="text-card">
+      <mat-card-header>
+        <mat-card-title>Ristorante Monalbuccio</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Born in 1987, Ristorante Monalbuccio has grown with the aim of standing out for the wide selection of raw materials , for the choice of wines and for the  attention to every detail ,
+           from welcoming the customer  to the preparation of the dishes.</p>
+            <p> Join us as we share the journey that has crafted our flavors, the traditions we've preserved, and the passion that fuels every dish we serve.</p>
+                 <button [routerLink]="'/contact'" class="btn_link" mat-button>
+                  Reserve Your Table
+                    <mat-icon>arrow_forward</mat-icon>
+                  </button>
+      </mat-card-content>
+    </mat-card>
+  
+    <!-- image slider -->
+    <app-image-slider [autoPlay]="true" [slides]="slides"></app-image-slider>
+  </div>
+
+  <!-- load skill section component -->
+  <app-skill-section></app-skill-section>
+
+   <!-- kind be text section -->
+   <app-developer-intro></app-developer-intro>
+
+   <!-- Hiring Component -->
+<app-hiring-options></app-hiring-options>
+
+<!-- Footer Component -->
+<app-footer></app-footer>

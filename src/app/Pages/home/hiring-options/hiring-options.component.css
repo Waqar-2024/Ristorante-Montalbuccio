@@ -1,0 +1,151 @@
+/* main card container */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 0 0;
+    margin: 20px 20px;
+}
+
+/* main card 2 column */
+.column-card {
+    width: 90%;
+    text-align: center;
+    color: #e50914;
+    box-shadow: none;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+/* card1 which have heading there heading css  */
+#col_crd_1 mat-card-title {
+    padding: 20px;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+/* cards 1 titte section has div this is css for that */
+.highlight {
+    font-weight: bold;
+    color: #4f4f4f;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+/* 2nd card  and it is card container that have 2 main cards which has time schedules */
+.cont_aval {
+    flex-direction: row;
+    box-shadow: none;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards to 2nd container  */
+.cards {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+/* tittle in cards */
+.cards mat-card-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #e50914;
+}
+
+/* Icon css */
+.cards mat-icon:nth-child(2) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #e50914;
+    font-size: 25px;
+
+}
+
+/* Cards ul css */
+.cards ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    word-spacing: 0.2vw;
+    line-height: 2.5;
+    font-weight: 500;
+    list-style: disc;
+}
+
+/* Replace the disc color */
+.cards ul li::marker {
+    color: #e50914;
+}
+
+/*cards button css  */
+/* .btn_link {
+    background-color: #e50914;
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 7px;
+} */
+
+/* when hover to button then css */
+/* .btn_link:hover {
+    background-color: #e0e0e0;
+    color: #333333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+} */
+
+/* media querry upto 430px */
+@media (max-width: 430px) {
+
+    /* main card container */
+    .card-section {
+        gap: 0px
+    }
+
+    /* 2nd card which are container */
+    .cont_aval {
+        flex-direction: column;
+        width: 90%;
+        gap: 10px;
+    }
+
+    /* cards ul  */
+    .cards ul {
+        word-spacing: normal;
+    }
+
+    /* button font-size change */
+    .btn_link {
+        font-size: 18px;
+    }
+}
+
+/* media querry for tablet */
+@media (max-width: 768px) {
+
+      /* tittle in cards */
+    .cards mat-card-title {
+        font-size: 22px;
+    }
+
+    /* cards 1 titte section has div this is css for that */
+    #col_crd_1 mat-card-title {
+        font-size: 25px;
+    }
+
+     /* cards 1 titte section has div this is css for that */
+     .highlight {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,59 @@
+.sidenav {
+    /* Side nav bar main container css */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #a69d8c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidenav a {
+    /* css All pages like home..   */
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:not(.closebtn) {
+    /* css All pages excluded x like home..   */
+    margin: 7vh;
+    padding: 8px 8px 8px 32px;
+    border-radius: 15px;
+    background-color:#e72929;
+    color: #fff;
+    opacity: 0.9;
+     
+}
+
+
+
+.sidenav a:hover:not(.closebtn) {
+    /* Hover All pages like home..   */
+    opacity: 1.1;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.sidenav a.closebtn:hover {
+    /* Hover close button  */
+    color: #e72929;
+}
+
+.sidenav .closebtn {
+    /*close button css */
+    position: absolute;
+    top: 0;
+    right: 25px;
+    padding: 0px 10px;
+    font-size: 46px;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+

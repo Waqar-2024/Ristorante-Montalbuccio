@@ -1,0 +1,37 @@
+<!-- this is all for header section -->
+<mat-toolbar color="primary"> 
+    <button (click)="openSidBar()" class="menu-button" mat-icon-button aria-label="Menu Icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+
+    <!-- Resturant name -->
+    <div class="header-container">
+        <h1 class="title">Ristorante Pizzeria</h1>
+        <p class="subtitle">Montalbuccio</p>
+      </div>
+
+      <!-- shopping card bucket -->
+      <button mat-icon-button class="cart-button">
+        <mat-icon style="font-size: 27px;">shopping_cart</mat-icon>
+        <span class="cart-badge" *ngIf="cartCount > 0">{{ cartCount }}</span>
+      </button>
+      
+      
+      <!-- side bar menu show when width is small -->
+    <span *ngIf="menuDisplay" class="example-spacer"></span>
+     
+   <ng-container *ngIf="menuDisplay">
+    <button mat-button [routerLink]="'/home'">HOME</button>
+    <button mat-raised-button  class="book-now">
+        <mat-icon class="icon">restaurant</mat-icon>
+        Book Now
+      </button>
+      
+    <button  mat-button [routerLink]="'/contact'">CONTACT</button>
+</ng-container>
+</mat-toolbar>
+<!-- side bar component conditionally run good work waqar -->
+<app-sidenav (closeSideBar)="closeSidBar()" *ngIf="togleSideBarComp"></app-sidenav>
+
+
+

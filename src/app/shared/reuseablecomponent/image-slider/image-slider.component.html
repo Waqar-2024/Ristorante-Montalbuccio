@@ -1,0 +1,22 @@
+<div class="slides">
+    <!-- /* container which has images */ -->
+    <div class="slide" [ngStyle]="{'background-image':'url('+slides[currentSlide].url+')',
+        opacity:hidden ? 0 : 1
+    }">
+
+        <!-- /* all dots under this */ -->
+        <div id="indicators">
+            <div class="indicator" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide"
+                (click)="jumpToSlide(i)">
+            </div>
+        </div>
+    </div>
+
+    <!-- next and previous arrow button -->
+    <button (click)="next()" class="nextButton">
+        <fa-icon [icon]="faArrowRight"> </fa-icon>
+    </button>
+    <button (click)="previous()" class="previousButton">
+        <fa-icon [icon]="faArrowLeft"> </fa-icon></button>
+
+</div>

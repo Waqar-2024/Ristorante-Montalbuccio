@@ -1,0 +1,47 @@
+/* Footer Section Styles */
+footer {
+    background-color: #3f51b5 !important;
+    color: white;
+    text-align: center;
+}
+
+/* Each footer column */
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Each footer sub-column inside a column */
+.footer-sub-column {
+    margin-bottom: 15px;
+}
+
+/* footer headings */
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Add some padding to the bottom */
+footer .container {
+    padding-bottom: 20px;
+}
+
+/* ul which has links css */
+ul {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* all li */
+li{
+    list-style: none;
+}
+
+/* links css */
+ li a {
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,114 @@
+/* header css main section */
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #807662;
+  height: auto !important; /* Ensures padding adjusts height */
+  
+}
+
+/* for space between name and pages */
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* menu button display */
+.menu-button {
+  display: block;
+ 
+}
+
+/* which contains resturant name  */
+.header-container {
+  text-align: center; /* Center the entire content */
+}
+
+/* which contains resturant tittle Ristorante Pizzeria */
+.title {
+  display: block; /* Ensures it occupies its line */
+  position: relative;
+  margin: 0; /* Reset default margin */
+  padding-top: 20px;
+}
+
+/* for under white line of resturant name */
+.title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center the border under text */
+  bottom: -5px; /* Adjust spacing below the text */
+  width: 100%; /* Full width under the text */
+  height: 2px;
+  background-color: white;
+}
+
+/* which paragraph contains Montalbuccio name  */
+.subtitle {
+  font-size: 1rem;
+  margin-top: 4px; /* Adjust spacing from title */
+}
+
+/* bucket which show selected items  */
+.cart-button {
+  position: relative;
+}
+
+/* selected item number */
+.cart-badge {
+  position: absolute;
+  top: 11px; /* Adjust to place it correctly */
+  right: 13px; /* Adjust to align with the bucket */
+  background-color: transparent; /* No background */
+  color: black; /* Contrast against white bucket */
+  border-radius: 50%; /* Maintain circular shape */
+  width: 20px; /* Fixed size */
+  height: 20px; /* Fixed size */
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px; /* Smaller font to fit inside */
+  font-weight: bold;
+  line-height: 1; /* Prevent text from overflowing vertically */
+}
+
+
+
+/* menu button like home ................ */
+ button{
+ padding: 25px 20px;
+ border-radius: 15px;
+ margin: 0 5px ;
+}
+
+/* when hover menu buttons */
+button:hover{
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds glow */
+  opacity: 1.1 ;
+}
+
+.book-now{
+  background-color:#e72929 !important;
+  color: white !important;
+  opacity: 0.9 ;
+}
+
+/* menu button links  */
+a{
+text-decoration: none;
+color: white;
+font-size: 1rem;
+transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* media querry for when use menu button to show */
+@media (min-width: 701px) {
+  .menu-button {
+    display: none;
+    /* Hide the menu button when the screen is larger than 700px */
+  }
+}

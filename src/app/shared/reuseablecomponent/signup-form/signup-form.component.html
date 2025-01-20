@@ -1,0 +1,96 @@
+<!-- Form wrap in this div -->
+<div class="form_cnt">
+    <div class="container" >
+        <form class="sign-up" #form="ngForm">
+            <h1 class="heading">Contact Us</h1>
+
+            <!-- container name form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/1zgS8WTF/user.png" alt="icon" height="20">
+                    <input type="text" #name="ngModel" [(ngModel)]="form_data.name" name="name" required minlength="3" placeholder="Name">
+
+                </div>
+
+                <!-- this is conditionally if user not write authentic text -->
+                <div class="txt_red">
+                    @if((name.touched || name.dirty) && name.errors?.['required']){
+                        <span>Name is Required</span>
+                    }
+                    @else if ((name.touched || name.dirty) && name.errors?.['minlength']) {
+                        <span>Min 3 Char is Required</span>
+                    }
+                </div>
+            </div>
+
+            <!-- container email form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/DZBPRgvC/email.png" alt="icon" height="12">
+                    <input type="email" #email="ngModel" [(ngModel)]="form_data.email" required email name="email" placeholder="Email">
+                </div>
+
+                <!-- this is conditionally if user not write authentic text -->
+                <div class="txt_red">
+                    @if((email.touched || email.dirty) && email.errors?.['required']){
+                        <span>Email is Required</span>
+                    }
+                    @else if ((email.touched || email.dirty) && email.errors?.['email']) {
+                        <span>Enter a Valid Email Address</span>
+                    }
+                </div>
+            </div>
+
+            <!-- container password form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/Nj5SDK4q/password.png" alt="icon" height="20">
+                    <input type="password" #password="ngModel" [(ngModel)]="form_data.password" name="password" required minlength="8" placeholder="Password">
+                </div>
+
+                <!-- this is conditionally if user not write authentic text -->
+                <div class="txt_red">
+                    @if((password.touched || password.dirty) && password.errors?.['required']){
+                        <span>Password is Required</span>
+                    }
+                    @else if ((password.touched || password.dirty) && password.errors?.['minlength']) {
+                        <span>Password must be at least 8 Characters</span>
+                    }
+                </div>
+            </div>
+
+            <!-- container Confirm Password form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <img src="https://i.postimg.cc/Nj5SDK4q/password.png" alt="icon" height="20">
+                    <input (input)="passwordMatchValidator(form)" type="password" [(ngModel)]="form_data.repeatPassword" required name="confirmPassword" #confirmPassword="ngModel"
+                        placeholder="Confirm Password" >
+                </div>
+
+                <!-- this is conditionally if user not write authentic text -->
+                <div class="txt_red">
+                    @if((confirmPassword.touched || confirmPassword.dirty) && confirmPassword.errors?.['required']){
+                        <span>Confirm Password is Required</span>
+                    }
+                    @else if ((confirmPassword.touched || confirmPassword.dirty) && confirmPassword.errors?.['passwordMismatch']) {
+                        <span >Passwords do not match.</span>
+                    }
+                </div>
+            </div>
+
+            <br>
+            <button (click)="submit_Form(form)" [disabled]="form.invalid" type="submit">CREATE ACCOUNT</button>
+            <p class="conditions">Already have an account? 
+                <!-- <a class="for_signIn" href="#">Sign in</a> -->
+                <a class="for_signIn"  mat-button [routerLink]="'/login'">Sign in</a>
+            </p>
+
+        </form>
+
+        <!-- Text container -->
+        <div class="text-container">
+            <h1>Glad to see you!</h1>
+            <p>Welcome, please fill in the blanks for sign up</p>
+        </div>
+    </div>
+</div>
