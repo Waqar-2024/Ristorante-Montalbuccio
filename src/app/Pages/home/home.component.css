@@ -31,14 +31,13 @@ app-image-slider {
 .text-card mat-card-title {
     font-size: 33px;
     font-weight: bold;
-    color: #e50914;
+    color: var(--primary-color);
 }
 
 
 /* image slider */
 app-image-slider  {
     width: 100%;
-    /* max-height: 500px; */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     object-fit: cover;
@@ -46,9 +45,9 @@ app-image-slider  {
 
 /* button css  */
 .btn_link {
-    background-color: #e72929;
+    background-color: var(--primary-color);
     border-radius: 1rem;
-    opacity: 1;
+    opacity: 0.9;
     color: #fff !important;
    padding: 25px !important;
 }
@@ -56,10 +55,9 @@ app-image-slider  {
 /* text card link style when hover  */
 .btn_link:hover {
     opacity: 1.1;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    text-shadow: var(--text-shadow);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 
 @media (max-width: 768px) {

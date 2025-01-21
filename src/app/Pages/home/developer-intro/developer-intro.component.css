@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background: linear-gradient(135deg, #1e90ff 20%, #4682b4 50%, #00bfff 80%);
+    background: linear-gradient(135deg, #807662 20%, #9e9b75 50%, #b3b085 80%);
+
 }
 
 /* heading or tittle css */
@@ -18,7 +19,7 @@ mat-card-title {
     line-height: 1.2;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 2.5em;
     padding: 20px;
     color: #fff;
 
@@ -51,7 +52,8 @@ mat-card-title {
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #e50914;
+    color: #e74c3c;
+    font-weight: bolder;
 }
 
 /* Icons for  */
@@ -64,19 +66,29 @@ mat-icon {
     border: none;
     display: block;
     margin: 3.5vh;
-    padding: 20px 40px;
-    background: linear-gradient(135deg, #e50914 20%, #ff6b6b 60%, #ff0000 90%);
+    padding: 10px 30px;
+    opacity: 0.9;
+    background-color: var(--primary-color);
     color: #fff;
     font-size: 22px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 /* when hover tobutton */
 .btn:hover {
     cursor: pointer;
-    background: #fff;
-    color: #e50914;
+    opacity: 1.1;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-shadow: var(--text-shadow);;
+}
+
+@media (max-width: 350px) {
+    .btn {
+        width: 100%;
+        font-size: 20px;
+    }
 }
 
 /* media query for responsible design */

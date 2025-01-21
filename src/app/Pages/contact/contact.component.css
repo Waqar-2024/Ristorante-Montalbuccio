@@ -1,0 +1,90 @@
+
+/* for remaining height contain contact component */
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; 
+  }
+  
+  /* Prevent shrinking of the header */
+  app-header {
+    flex-shrink: 0; 
+  }
+  
+  /* Prevent shrinking of the footer */
+  app-footer {
+    flex-shrink: 0; 
+  }
+  
+
+  /* main container */
+.parent-card {
+    padding: 20px;
+    margin: 20px ;
+    flex-grow: 1; /* Fills the remaining space between header and footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* cards container */
+  .child-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* cards */
+  .child-card {
+    width: 48%;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 3rem !important;
+  }
+  
+  /* contact card */
+  .child_1{
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+  }
+
+  /* contact card title */
+  mat-card-title{
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* contact card list  */
+  li{
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  /* links in contact card */
+  li a{
+    text-decoration: none;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    /* main container */
+    .parent-card {
+        padding: 5px;
+        margin: 0px ;  
+      }
+      
+      /* cards direction change */
+    .child-cards {
+        flex-direction: column;
+        padding: 20px 5px;
+    }
+
+    /* cards container */
+    .child-card {
+      width: 100%;
+      margin-top: 10px;
+      padding: 20px 10px;
+    }
+  }

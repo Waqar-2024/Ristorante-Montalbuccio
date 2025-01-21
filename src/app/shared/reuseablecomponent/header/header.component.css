@@ -87,12 +87,12 @@ mat-toolbar {
 /* when hover menu buttons */
 button:hover{
   color: #ffffff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds glow */
+  text-shadow:var(--text-shadow); /* Adds glow */
   opacity: 1.1 ;
 }
 
 .book-now{
-  background-color:#e72929 !important;
+  background-color:var(--primary-color) !important;
   color: white !important;
   opacity: 0.9 ;
 }

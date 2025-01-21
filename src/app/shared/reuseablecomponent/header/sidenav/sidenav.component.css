@@ -27,12 +27,11 @@
     margin: 7vh;
     padding: 8px 8px 8px 32px;
     border-radius: 15px;
-    background-color:#e72929;
+    background-color:var(--primary-color);
     color: #fff;
     opacity: 0.9;
      
 }
-
 
 
 .sidenav a:hover:not(.closebtn) {
@@ -43,7 +42,7 @@
 
 .sidenav a.closebtn:hover {
     /* Hover close button  */
-    color: #e72929;
+    color: var(--primary-color);
 }
 
 .sidenav .closebtn {

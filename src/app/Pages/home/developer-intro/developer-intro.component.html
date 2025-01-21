@@ -1,36 +1,44 @@
 <!-- container -->
 <mat-card class="flex-column-section">
-    <mat-card-title>Innovative Web Development <br>
-        <div class="highlight">In Italy</div>
+    <mat-card-title>Ristorante Pizzeria Montalbuccio <br>
+        <div class="highlight">In Siena</div>
     </mat-card-title>
 
     <!-- Card container -->
     <div class="card-container">
+
         <mat-card class="small-card">
             <!-- Icons -->
-            <mat-icon class="mat-icon-large">airplanemode_active</mat-icon>
+            <mat-icon>wine_bar</mat-icon>
             <mat-card-content>
-                Easy To Start
+                Fine Wine
             </mat-card-content>
         </mat-card>
 
         <mat-card class="small-card">
             <!-- Icons -->
-            <mat-icon class="mat-icon-large">close</mat-icon>
+            <mat-icon>restaurant</mat-icon>
             <mat-card-content>
-                Cancel Any Time
+                Tasty Dishes
             </mat-card-content>
         </mat-card>
 
         <mat-card class="small-card">
             <!-- Icons -->
-            <mat-icon class="mat-icon-large">location_on</mat-icon>
+            <mat-icon>local_pizza</mat-icon>
             <mat-card-content>
-                Hire From Anywhere
+                Delicious Pizza
             </mat-card-content>
         </mat-card>
+
+        
+
+        
     </div>
 
     <!-- button for join us -->
-    <button [routerLink]="'/contact'" class="btn">Contact Us</button>
+    <button [routerLink]="'/contact'" class="btn">
+        <mat-icon style="margin-right: 3px;">restaurant_menu</mat-icon>
+        Explore Menu
+    </button>
 </mat-card>

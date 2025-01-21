@@ -1,3 +1,51 @@
-<app-header></app-header>
-<app-signup-form></app-signup-form>
+<!-- header component -->
+<app-header></app-header> 
+
+<!-- main container -->
+<mat-card class="parent-card">
+    <mat-card-content>
+        <!-- cards container -->
+      <div class="child-cards ">
+        <!-- contact card -->
+        <mat-card class="child-card child_1">
+          <mat-card-title>Contact information</mat-card-title>
+          <mat-card-content>
+            <mat-icon>contact_phone</mat-icon>
+            <li>Strada di Montalbuccio, 57 - 53100 Siena Tuscany</li>
+            <li>
+                <a class="mail" href="mailto:info@ristorantemontalbuccio.it?subject=Hello&body=I%20would%20like%20to%20discuss...">
+                    info&#64;ristorantemontalbuccio.it
+                </a>
+            </li>
+            <li>
+                <a href="tel:+390577285294">
+                    <mat-icon>phone</mat-icon> +39 0577 285294
+                  </a>
+            </li>
+            <li>
+                <a href="https://wa.me/390577285294" target="_blank">
+                    <fa-icon style="font-size: 22px;" [icon]="faWhatsapp"></fa-icon>
+                    +39 0577 285294
+                  </a>
+            </li>
+          </mat-card-content>
+        </mat-card>
+  
+        <!-- map card -->
+        <mat-card class="child-card" style="padding: 0; margin: 10px; border-radius: 5px; overflow: hidden;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.9822409623454!2d11.318111176318446!3d43.32675817338905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a360a4fa7b9e5%3A0x580b1eaf17d5b634!2sStrada%20di%20Montalbuccio%2C%2057%2C%2053100%20Siena%20SI%2C%20Italy!5e0!3m2!1sen!2sus!4v1695998193246!5m2!1sen!2sus" 
+              width="100%" 
+              height="300" 
+              style="border: 0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </mat-card>   
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
+<!-- footer component -->
 <app-footer></app-footer>
