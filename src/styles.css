@@ -1,8 +1,22 @@
-/* You can add global styles to this file, and also import other style files #3498db */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 :root {
     --primary-color: #e72929 ;
     --text-shadow:  0 0 10px rgba(255, 255, 255, 0.8);;
   }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+  *{
+      box-sizing: border-box;
+  }
+  
+  body{
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 18px;
+  }
+  
+  a{
+      text-decoration: none !important;
+  }
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

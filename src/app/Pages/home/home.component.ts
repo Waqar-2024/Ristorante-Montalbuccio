@@ -24,19 +24,19 @@ import { ImageSliderComponent } from '../../shared/reuseablecomponent/image-slid
 export class HomeComponent {
   slides:any[]=[
     {
-      url: 'assets/img1.jpg',
+      url: 'home_assets/img1.jpg',
       title:'First Slide',
       description:'this is first slide'
     },
 
     {
-      url: 'assets/img2.avif',
+      url: 'assets/home_img2.avif',
       title:'Second Slide',
       description:'this is Second slide'
     },
     
     {
-      url: 'assets/img3.jpg',
+      url: 'assets/home_img3.jpg',
       title:'Third Slide',
       description:'this is 3rd slide'
     },
