@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { RouterModule } from '@angular/router';
+import { CartService } from '../../../core/Models/Services/cart/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -19,6 +20,10 @@ export class HeaderComponent {
   menuDisplay: Boolean = true   //this is for menu all pages home etc.. use only less than 700
   togleSideBarComp: Boolean = false // for open and close side nav component
   cartCount: number = 0; // for showing select items in card 
+
+  constructor(private cartService: CartService){
+ this.cartCount=this.cartService.getCart().items.length
+  }
 
   ngOnInit(): void {
     // Check window width on component initialization
@@ -43,11 +48,6 @@ export class HeaderComponent {
     }
   }
 
-  
-// added selected numbers
-addToCart(item: any) {
-  this.cartCount++;
-}
 
 
 

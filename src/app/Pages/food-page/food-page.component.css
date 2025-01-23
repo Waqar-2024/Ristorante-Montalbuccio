@@ -1,0 +1,130 @@
+
+/* food page container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+
+/* direct child of container  */
+.container>* {
+    /* min-width: 25rem; */
+    max-width: 60%;
+}
+
+img {
+    border-radius: 3rem;
+    flex: 1 0;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0;
+    border-radius: 3rem;
+    padding: 1rem;
+    color: black;
+    margin-left: .7rem;
+}
+
+.details .header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.details .name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.details .favourite {
+    color: var(--primary-color);
+}
+
+.details .favourite.not {
+    color: grey;
+}
+
+.details .origins {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .8rem 0rem;
+}
+
+.details .origins>span {
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin: .4rem .5rem .5rem 0;
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
+
+.details .cook-time {
+    margin-top: 0.8rem;
+}
+
+.details .cook-time span {
+    padding: .6rem 2rem .6rem 0;
+    border-radius: 10rem;
+    font-size: 1.3rem;
+}
+
+.details .price {
+    font-size: 1.8rem;
+    margin: 1.5rem 2rem 2rem 0;
+    color: green;
+}
+
+.details .price::before {
+    content: "Price ";
+    color: darkgray;
+}
+
+.details button {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10rem;
+    outline: none;
+    opacity: .9;
+}
+
+.details button:hover {
+    opacity: 1.1;
+
+}
+
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+
+    /* food page container */
+    .container {
+        margin: 1rem 0rem ;
+        gap: 10px;
+    }
+    .container > * {
+        flex: 1 1 100%; /* Full width on small screens */
+        max-width: 100%;
+    }
+
+    .details {
+        padding: .5rem 0.5rem;
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    img {
+        width: 90%;
+        margin: .5rem 0;
+    }
+
+}

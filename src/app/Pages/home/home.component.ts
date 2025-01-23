@@ -24,21 +24,31 @@ import { ImageSliderComponent } from '../../shared/reuseablecomponent/image-slid
 export class HomeComponent {
   slides:any[]=[
     {
-      url: 'home_assets/img1.jpg',
+      url: 'assets/resturant/ilaria1.jpg', 
       title:'First Slide',
       description:'this is first slide'
     },
 
     {
-      url: 'assets/home_img2.avif',
+      url: 'assets/resturant/rst2.jpg',
       title:'Second Slide',
       description:'this is Second slide'
     },
     
     {
-      url: 'assets/home_img3.jpg',
+      url: 'assets/resturant/rst3.jpg',
       title:'Third Slide',
       description:'this is 3rd slide'
+    },
+    {
+      url: 'assets/resturant/rst4.jpg',
+      title:'Fourth Slide',
+      description:'this is 4th slide'
+    },
+    {
+      url: 'assets/resturant/rst5.jpg',
+      title:'Fivth Slide',
+      description:'this is 5th slide'
     },
     
   ]

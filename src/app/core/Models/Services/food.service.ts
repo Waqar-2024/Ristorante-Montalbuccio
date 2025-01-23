@@ -7,6 +7,14 @@ import { Tag } from '../tag';
 })
 export class FoodService {
 
+  // return single food item base of id 
+  getFoodById(id:number):Food{
+  return this.getAll().find(food =>
+    food.id == id
+  )!
+  }
+
+  // this function return all the food items with detail
   getAll(): Food[] {
     return [
       {

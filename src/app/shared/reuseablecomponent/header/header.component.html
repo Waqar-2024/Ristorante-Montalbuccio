@@ -11,7 +11,7 @@
       </div>
 
       <!-- shopping card bucket -->
-      <button mat-icon-button class="cart-button">
+      <button routerLink="/cart-page" mat-icon-button class="cart-button">
         <mat-icon style="font-size: 27px;">shopping_cart</mat-icon>
         <span class="cart-badge" *ngIf="cartCount > 0">{{ cartCount }}</span>
       </button>
