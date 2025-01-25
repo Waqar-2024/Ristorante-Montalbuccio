@@ -22,7 +22,10 @@ export class HeaderComponent {
   cartCount: number = 0; // for showing select items in card 
 
   constructor(private cartService: CartService){
- this.cartCount=this.cartService.getCart().items.length
+//  this.cartCount=this.cartService.getCart().items.length;
+ this.cartService.getCart().subscribe(res=>{
+  this.cartCount=res.items.length
+ })
   }
 
   ngOnInit(): void {

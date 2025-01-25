@@ -5,12 +5,12 @@ import { ButtonComponent } from '../../../shared/button/button.component';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-hiring-options',
+  selector: 'app-resturant-timing',
   standalone: true,
   imports: [MatCardModule,MatIconModule,ButtonComponent,RouterModule],
-  templateUrl: './hiring-options.component.html',
-  styleUrl: './hiring-options.component.css'
+  templateUrl: './resturant-timing.component.html',
+  styleUrl: './resturant-timing.component.css'
 })
-export class HiringOptionsComponent {
+export class ResturantTimingComponent {
  
 }

@@ -4,13 +4,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-developer-intro',
+  selector: 'app-resturant-heading',
   standalone: true,
   imports: [MatCardModule,MatIconModule,RouterModule],
-  templateUrl: './developer-intro.component.html',
-  styleUrl: './developer-intro.component.css'
+  templateUrl: './resturant-heading.component.html',
+  styleUrl: './resturant-heading.component.css'
 })
-export class DeveloperIntroComponent {
+export class ResturantHeadingComponent {
 
 }
  

@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/reuseablecomponent/header/header.component';
 import { FooterComponent } from '../../shared/reuseablecomponent/footer/footer.component';
 import { NotFoundComponent } from '../not-found/not-found.component';
-
+ 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
@@ -34,6 +34,8 @@ this.setCart();
 }
 
 setCart(){
-  this.cart=this.cartService.getCart();
+  this.cartService.getCart().subscribe(carts=>{
+    this.cart=carts
+  });
 }
 }

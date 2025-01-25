@@ -3,8 +3,8 @@ import { HeaderComponent } from '../../shared/reuseablecomponent/header/header.c
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { DeveloperIntroComponent } from './developer-intro/developer-intro.component';
-import { HiringOptionsComponent } from './hiring-options/hiring-options.component';
+import { ResturantHeadingComponent } from './resturant-heading/resturant-heading.component';
+import { ResturantTimingComponent } from './resturant-timing/resturant-timing.component';
 import { FooterComponent } from '../../shared/reuseablecomponent/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -15,7 +15,7 @@ import { ImageSliderComponent } from '../../shared/reuseablecomponent/image-slid
   selector: 'app-home',
   standalone: true,
   imports: [HeaderComponent,MatCardModule,MatButtonModule,MatIconModule,ImageSliderComponent,
-  DeveloperIntroComponent,HiringOptionsComponent,FooterComponent
+    ResturantHeadingComponent,ResturantTimingComponent,FooterComponent
   ,RouterModule,CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
