@@ -1,8 +1,11 @@
 <!-- header -->
 <app-header></app-header>
 
+<app-not-found [visible]="!food" notFoundMessage="Product not found"
+ [resetLinkText]="'Back to Menu Page'">
+</app-not-found>
 <!-- all food item page -->
-<div class="container">
+<div *ngIf="food" class="container">
     <!-- image id base which food selected -->
     <img [src]="food.imageUrl" [alt]="food.name">
     <!-- detail id base which food selected -->

@@ -8,11 +8,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { TagsComponent } from '../menu/tags/tags.component';
 import { CartService } from '../../core/Models/Services/cart/cart.service';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 @Component({
   selector: 'app-food-page',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent,MatIconModule,CommonModule,TagsComponent],
+  imports: [HeaderComponent,NotFoundComponent, FooterComponent,MatIconModule,CommonModule,TagsComponent],
   templateUrl: './food-page.component.html',
   styleUrl: './food-page.component.css'
 })

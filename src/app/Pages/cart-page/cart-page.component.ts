@@ -6,11 +6,12 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '../../shared/reuseablecomponent/header/header.component';
 import { FooterComponent } from '../../shared/reuseablecomponent/footer/footer.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 @Component({
   selector: 'app-cart-page',
   standalone: true,
-  imports: [CommonModule,RouterModule,HeaderComponent,FooterComponent],
+  imports: [CommonModule,RouterModule,HeaderComponent,FooterComponent,NotFoundComponent],
   templateUrl: './cart-page.component.html',
   styleUrl: './cart-page.component.css'
 })

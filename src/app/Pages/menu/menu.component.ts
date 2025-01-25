@@ -8,12 +8,13 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search.component';
 import { TagsComponent } from './tags/tags.component';
 import { MatIconModule } from '@angular/material/icon';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 @Component({
   selector: 'app-menu',
   standalone: true,
   imports: [HeaderComponent,FooterComponent,CommonModule,SearchComponent,TagsComponent,
-    RouterModule,MatIconModule],
+    RouterModule,MatIconModule,NotFoundComponent],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
