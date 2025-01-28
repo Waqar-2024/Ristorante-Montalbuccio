@@ -156,7 +156,9 @@ button:disabled {
     color: #2D2C2C;
     line-height: 20px;
 }
-
+input{
+    font-size: 20px !important;
+}
 @media screen and (max-width: 1080px) {
     .text-container { 
         display: none; 

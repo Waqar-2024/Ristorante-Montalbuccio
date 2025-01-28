@@ -5,6 +5,7 @@ import { LoginFormComponent } from './shared/reuseablecomponent/login-form/login
 import { MenuComponent } from './Pages/menu/menu.component';
 import { FoodPageComponent } from './Pages/food-page/food-page.component';
 import { CartPageComponent } from './Pages/cart-page/cart-page.component';
+import { FormComponent } from './shared/reuseablecomponent/form/form.component';
 
 export const routes: Routes = [
     {
@@ -27,6 +28,11 @@ export const routes: Routes = [
     {
         path:'cart-page',
         component: CartPageComponent,
+       
+    },
+    {
+        path:'form',
+        component: FormComponent,
        
     },
     {

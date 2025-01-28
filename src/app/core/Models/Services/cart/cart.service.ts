@@ -8,9 +8,10 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
-private cart:Cart= new Cart();
+private cart:Cart= new Cart();//all item which are selected these are in cart
 private cartSubject = new BehaviorSubject<Cart>(this.cart);//card subject hold cart value
 
+// item add in cart
 addToCart(food:Food){
  let cartItem = this.cart.items.find(item=>item.food.id === food.id )
  if(cartItem){
@@ -20,11 +21,14 @@ addToCart(food:Food){
  this.cart.items.push(new CartItem(food))
  this.cartSubject.next(this.cart);
 }
+
+// item removes from cart
 removeFromCart(foodId:Number):void{
   this.cart.items=this.cart.items.filter(item=> item.food.id != foodId)
   this.cartSubject.next(this.cart);
  }
  
+//  change card quantity
  changeQuantity(foodId:Number,quantity:number):void{
  let cartItem = this.cart.items.find(item => item.food.id === foodId)
  if(!cartItem) return;
