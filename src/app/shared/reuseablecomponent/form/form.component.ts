@@ -5,6 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { MatIconModule } from '@angular/material/icon';
+import { CartService } from '../../../core/Models/Services/cart/cart.service';
 
 @Component({
   selector: 'app-signup-form',
@@ -22,7 +23,7 @@ export class FormComponent {
   time:'20:30'
  }
 
- constructor(private router: Router){}
+ constructor(private router: Router, private cart:CartService){}
 
  getCurrentDate(): string {
   const today = new Date();
@@ -35,8 +36,7 @@ export class FormComponent {
 
 // Submit form
 submit_Form(form:NgForm){
-  console.log(form)
- 
+ this.cart.clientData(this.form_data)
 }
 
 

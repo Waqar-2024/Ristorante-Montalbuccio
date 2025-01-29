@@ -41,5 +41,12 @@ removeFromCart(foodId:Number):void{
 getCart(): Observable<Cart> {
   return this.cartSubject.asObservable(); // Return as an observable
 }
+
+// form data recieve and sent all data to backend
+clientData(form_data:any){
+const data_backend=[]
+data_backend.push(form_data,this.cart)
+console.log(data_backend)
+}
 }
  

@@ -93,18 +93,21 @@ button {
     outline: none;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(-30deg, #3B02ED, #8E2AE0 55%);
+    /* background: linear-gradient(-30deg, #3B02ED, #8E2AE0 55%); */
+    background-color: var(--primary-color);
     box-shadow: 2px 6px 16px rgba(66, 57, 238, .3);
     color: #FFFFFF;
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 13px;
     cursor: pointer;
+    opacity: 0.8;
     transition: all .3s ease;
 }
 
 /* for submit button */
-button:active { 
+button:hover { 
+    opacity: 1.1;
     transform: scale(1.1); 
 }
 
