@@ -8,7 +8,7 @@
             <!-- container name form field and validation div -->
             <div class="cont">
                 <div class="text">
-                    <img src="https://i.postimg.cc/1zgS8WTF/user.png" alt="icon" height="20">
+                    <!-- <img src="https://i.postimg.cc/1zgS8WTF/user.png" alt="icon" height="20"> -->
                     <input type="text" #name="ngModel" [(ngModel)]="form_data.name" name="name" required minlength="3"
                         placeholder="Name">
 
@@ -28,7 +28,7 @@
             <!-- container email form field and validation div -->
             <div class="cont">
                 <div class="text">
-                    <img src="https://i.postimg.cc/DZBPRgvC/email.png" alt="icon" height="12">
+                    <!-- <img src="https://i.postimg.cc/DZBPRgvC/email.png" alt="icon" height="12"> -->
                     <input type="email" #email="ngModel" [(ngModel)]="form_data.email" required email name="email"
                         placeholder="Email">
                 </div>
@@ -43,6 +43,29 @@
                     }
                 </div>
             </div>
+
+            <!-- container Mobile Number form field and validation div -->
+            <div class="cont">
+                <div class="text">
+                    <!-- <img src="https://i.postimg.cc/WzpZ6cXz/phone.png" alt="icon" height="20"> -->
+                    <input style="font-size: 20px;" type="tel" [(ngModel)]="form_data.mobile" required name="mobile"
+    #mobile="ngModel" placeholder="Mobile Number" pattern="^\+39\d{10}$">
+                </div>
+
+                <!-- this is conditionally if user not write authentic text -->
+                <div class="txt_red">
+                    <div *ngIf="(mobile.touched || mobile.dirty) && mobile.errors?.['required']">
+                        <span>Mobile Number is Required</span>
+                    </div>
+                    <div *ngIf="(mobile.touched || mobile.dirty) && mobile.errors?.['pattern']">
+                        <span>Please enter a valid  mobile number</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
             <!-- container Date form field and validation div -->
             <div class="cont">
@@ -77,7 +100,6 @@
                     }
                 </div>
             </div>
-
 
             <br>
             <button (click)="submit_Form(form)" [disabled]="form.invalid" type="submit">Confirm Reservation</button>

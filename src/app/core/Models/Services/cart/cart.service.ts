@@ -3,6 +3,7 @@ import { Cart } from '../../cart';
 import { Food } from '../../food';
 import { CartItem } from '../../cartItem';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,9 @@ export class CartService {
 private cart:Cart= new Cart();//all item which are selected these are in cart
 private cartSubject = new BehaviorSubject<Cart>(this.cart);//card subject hold cart value
 
-// item add in cart
+constructor(private http: HttpClient) {}
+
+// Add item to cart
 addToCart(food:Food){
  let cartItem = this.cart.items.find(item=>item.food.id === food.id )
  if(cartItem){
@@ -37,16 +40,20 @@ removeFromCart(foodId:Number):void{
  }
 
 
-//  its return a readonly observable and which subscribe update in exact time
+//    // Return the cart as an observable
 getCart(): Observable<Cart> {
   return this.cartSubject.asObservable(); // Return as an observable
 }
 
 // form data recieve and sent all data to backend
 clientData(form_data:any){
-const data_backend=[]
-data_backend.push(form_data,this.cart)
-console.log(data_backend)
+  // const data_backend = { ...form_data, cart: this.cart };
+  const sent_dta_admin={name:form_data.name,mobile_number:form_data.mobile , time:form_data.time, email:form_data.email,
+   data:form_data.date, total_price:this.cart.totalPrice, items:this.cart.items
+  }
+
+return this.http.post('http://localhost:3000/api/book-order', sent_dta_admin);
+
 }
 }
- 
+   

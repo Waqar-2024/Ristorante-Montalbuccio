@@ -19,12 +19,15 @@ export class FormComponent {
  form_data={
   name:'',
   email:'',
+  mobile:'',
   date:this.getCurrentDate(),
-  time:'20:30'
+  time:'20:30',
+  foodSpecification:''
  }
 
  constructor(private router: Router, private cart:CartService){}
 
+//  for get today date to show in form
  getCurrentDate(): string {
   const today = new Date();
   const dd = String(today.getDate()).padStart(2, '0');
@@ -35,9 +38,22 @@ export class FormComponent {
 }
 
 // Submit form
-submit_Form(form:NgForm){
- this.cart.clientData(this.form_data)
+submit_Form(form: NgForm) {
+  this.cart.clientData(this.form_data)
+    .subscribe(
+      res => {
+       alert('your order recieved successfully')
+        console.log("component- ", res);
+        this.router.navigate(['/']);
+        window.location.reload();
+      },
+      error => {
+        alert("Your order not sent successfully")
+        console.error("Error occurred:", error);
+      }
+    );
 }
+
 
 
 }
