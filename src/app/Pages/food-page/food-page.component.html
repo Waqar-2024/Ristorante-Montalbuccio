@@ -14,7 +14,7 @@
             <span class="name">
                 {{food.name}}
             </span>
-            <span class="favourite {{food.favourite?'':'not'}}">
+            <span  class="favourite {{food.favourite?'':'not'}}">
                 <mat-icon>favorite</mat-icon>
             </span>
         </div>
@@ -28,14 +28,14 @@
         </div>
         <div class="cook-time">
             <span>
-                Time to cook about <strong>{{food.cookTime}}</strong> minutes
+                Tempo di cottura circa <strong>{{food.cookTime}}</strong> minuti
             </span>
         </div>
         <div class="price">
             <span>{{food.price|currency}}</span>
         </div>
 
-        <button (click)="addToCart()">Add to Cart</button>
+        <button (click)="addToCart()">Aggiungi al Carrello</button>
     </div>
 </div>
 <!-- footer -->

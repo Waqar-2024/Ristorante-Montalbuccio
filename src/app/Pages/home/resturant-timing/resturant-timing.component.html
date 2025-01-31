@@ -1,45 +1,45 @@
-<!-- Full atime and part time job hours -->
+<!-- Full time and part time job hours -->
 <mat-card class="card-section">
     <!-- First Card -->
     <mat-card id="col_crd_1" class="column-card">
         <mat-card-title>
-            Our Business Hours
-            <div class="highlight">Check when we’re available for you</div>
+            I Nostri Orari di Apertura
+            <div class="highlight">Controlla quando siamo disponibili per te</div>
         </mat-card-title>
-
     </mat-card>
 
     <!-- Second Card and this is a container -->
     <mat-card class="card-section cont_aval">
         <!-- 1st card -->
         <mat-card class="cards">
-            <mat-card-title>Dining Hours</mat-card-title>
+            <mat-card-title>Orari di Ristorazione</mat-card-title>
             <mat-icon>schedule</mat-icon>
             <mat-card-content>
                 <ul>
-                    <li>Morning: 10:00 - 15:00</li>
-                    <li>Evening: 19:00 - 23:30</li>
-                    <li>Closed on Tuesday</li>
-                    <li>Holiday hours may based on demand</li>
+                    <li>Mattina: 10:00 - 15:00</li>
+                    <li>Sera: 19:00 - 23:30</li>
+                    <li>Chiuso il Martedì</li>
+                    <li>Orari speciali per eventi o festività</li>
                 </ul>
             </mat-card-content>
             <!-- <button class="btn_link" mat-button>
-                Hire Full-Time
+                Assumi a Tempo Pieno
             </button> -->
-            <app-button [routerLink]="'/menu'" [button]="'See Our Dishes'"> </app-button>
+            <app-button [routerLink]="'/menu'" [button]="'Scopri i Nostri Piatti'"> </app-button>
         </mat-card>
         <!-- 2nd card -->
         <mat-card class="cards">
-            <mat-card-title>Operating Schedule</mat-card-title>
+            <mat-card-title>Orario di Operazione</mat-card-title>
             <mat-icon>access_time</mat-icon>
             <mat-card-content>
                 <ul>
-                    <li>10:00 AM to 3:00 PM daily</li>
-                    <li>7:00 PM to 11:30 PM daily</li>
-                    <li>Closed on Tuesdays</li>
-                    <li>Special hours for events or holidays</li>
+                    <li>10:00 - 15:00 tutti i giorni</li>
+                    <li>19:00 - 23:30 tutti i giorni</li>
+                    <li>Chiuso il Martedì</li>
+                    <li>Orari speciali per eventi o festività</li>
                 </ul>
             </mat-card-content>
-            <app-button [routerLink]="'/menu'" [button]="'Browse Menu'"> </app-button>
+            <app-button [routerLink]="'/menu'" [button]="'Sfoglia il Menu'"> </app-button>
         </mat-card>
     </mat-card>
+</mat-card>

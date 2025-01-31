@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
 export class NotFoundComponent {
 
  @Input()  visible: boolean =false
- @Input() notFoundmessage : string = "Nothing found"
- @Input() resetLinkText:string="Reset"
+ @Input() notFoundmessage : string = "Nessun risultato trovato"
+ @Input() resetLinkText:string="Ripristina"
  @Input() resetLinkroute: string='/menu'
 }

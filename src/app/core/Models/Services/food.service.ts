@@ -37,7 +37,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 5,
         imageUrl: '/assets/Appetizers/Cold_Cuts1.jpg',
-        tags: ['Appetizers']
+        tags: ['Antipasti']
       },
       {
         id: 3,
@@ -48,7 +48,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 5,
         imageUrl: '/assets/Appetizers/Mixfry2.jpg',
-        tags: ['Appetizers',]
+        tags: ['Antipasti',]
       },
       {
         id: 4,
@@ -59,7 +59,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 5,
         imageUrl: '/assets/img2.jpg',
-        tags: ['Appetizers']
+        tags: ['Antipasti']
       },
       {
         id: 5,
@@ -70,7 +70,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img3.jpg',
-        tags: ['Seafood']
+        tags: ['Frutti di Mare']
       },
       {
         id: 6,
@@ -81,7 +81,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img3.jpg',
-        tags: ['Seafood']
+        tags: ['Frutti di Mare']
       },
       {
         id: 7,
@@ -92,7 +92,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img3.jpg',
-        tags: ['Seafood']
+        tags: ['Frutti di Mare']
       },
       {
         id: 8,
@@ -103,7 +103,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img4.jpg',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 9,
@@ -114,7 +114,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img4.jpg',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 10,
@@ -125,7 +125,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img4.jpg',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 11,
@@ -136,7 +136,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 12,
@@ -147,7 +147,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 13,
@@ -158,18 +158,18 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 14,
-        name: 'Fregola with seafood',
+        name: 'Fregola con Frutti di Mare',
         cookTime: '10-20',
         price: 14.00,
         favourite: true,
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 15,
@@ -180,7 +180,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 16,
@@ -191,7 +191,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Fisrt Courses']
+        tags: ['Primi Piatti']
       },
       {
         id: 17,
@@ -202,7 +202,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 18,
@@ -213,7 +213,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 19,
@@ -224,7 +224,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 20,
@@ -235,7 +235,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 21,
@@ -246,7 +246,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 22,
@@ -257,7 +257,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses']
+        tags: ['Secondi Piatti']
       },
       {
         id: 23,
@@ -268,7 +268,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses','Seafood']
+        tags: ['Secondi Piatti','Frutti di Mare']
       },
       {
         id: 24,
@@ -279,7 +279,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4,
         imageUrl: '/assets/img5.webp',
-        tags: ['Second Courses','Seafood']
+        tags: ['Secondi Piatti','Frutti di Mare']
       },
       {
         id: 25,
@@ -713,7 +713,7 @@ export class FoodService {
         imageUrl: '/assets/img6.webp',
         tags: ['Pizzeria']
       },
-      // deserts 
+      // dolce 
       {
         id: 64,
         name: 'Tartufo gelato affogato al caffè',
@@ -723,7 +723,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img6.webp',
-        tags: ['deserts']
+        tags: ['dolce']
       },
       {
         id: 65,
@@ -734,7 +734,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img6.webp',
-        tags: ['deserts']
+        tags: ['dolce']
       },
       {
         id: 66,
@@ -745,7 +745,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img6.webp',
-        tags: ['deserts']
+        tags: ['dolce']
       },
       {
         id: 67,
@@ -756,7 +756,7 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img6.webp',
-        tags: ['deserts']
+        tags: ['dolce']
       },
       {
         id: 68,
@@ -767,9 +767,9 @@ export class FoodService {
         origins: ['italy', 'spain'],
         stars: 4,
         imageUrl: '/assets/img6.webp',
-        tags: ['deserts']
+        tags: ['dolce']
       },
-    // Drinks
+    // Bevande
     {
       id: 69,
       name: 'Prosecco',
@@ -779,7 +779,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     {
       id: 70,
@@ -790,7 +790,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     {
       id: 71,
@@ -801,7 +801,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     {
       id: 72,
@@ -812,7 +812,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     {
       id: 73,
@@ -823,7 +823,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     {
       id: 74,
@@ -834,7 +834,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Apertivo"]
+      tags: ['Bevande',"Apertivo"]
     },
     // bears
     {
@@ -846,7 +846,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 76,
@@ -857,7 +857,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 77,
@@ -868,7 +868,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 78,
@@ -879,7 +879,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 79,
@@ -890,7 +890,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 80,
@@ -901,7 +901,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
     {
       id: 81,
@@ -912,7 +912,7 @@ export class FoodService {
       origins: ['italy', 'spain'],
       stars: 4,
       imageUrl: '/assets/img6.webp',
-      tags: ['Drinks',"Birre"]
+      tags: ['Bevande',"Birre"]
     },
   // vini
     {
@@ -1642,7 +1642,7 @@ export class FoodService {
     }));
 
     // Add "All" tag with total count
-    tags.unshift({ name: 'All', count: foods.length });
+    tags.unshift({ name: 'Tutti', count: foods.length });
 
     return tags;
   }

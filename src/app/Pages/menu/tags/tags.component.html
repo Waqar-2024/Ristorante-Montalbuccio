@@ -1,5 +1,6 @@
+<!-- All food tags here -->
 <div *ngIf="tags" [style.justifyContent]="justifyContent">
-    <a href="" *ngFor="let tag of tags" routerLink="/menu/tag/{{tag.name}}">
+    <a  href="" *ngFor="let tag of tags" routerLink="/menu/tag/{{tag.name}}">
        {{tag.name}} ({{tag.count}})
     </a>
    </div>
@@ -8,6 +9,6 @@
       <a href="" *ngFor="let tagName of foodPageTags" routerLink="/menu/tag/{{tagName}}">
          {{tagName}}
       </a>
-   </div>
+   </div> 
    
  

@@ -1,7 +1,7 @@
 <app-header></app-header> 
 <app-not-found [visible]="!cart || cart.items.length <= 0"
-notFoundmessage="Cart Page is empty!"
-resetLinkText="Go to Menu Page"
+notFoundmessage="La pagina del carrello è vuota!"
+resetLinkText="Vai alla pagina del menù"
 >
 
 </app-not-found>
@@ -28,7 +28,7 @@ resetLinkText="Go to Menu Page"
     {{cartItem.price | currency:'EUR'}}
    </div>
    <button class="remove-button" (click)="removeFromCart(cartItem)">
-    Remove
+    Rimuovere
    </button>
     </li>
 </ul>
@@ -37,7 +37,7 @@ resetLinkText="Go to Menu Page"
     <div>
         <div class="foods-count">{{cart.items.length}}</div>
         <div class="total-price"> {{cart.totalPrice | currency:'EUR'}} </div>
-        <div class="form_open"> <button routerLink="/form" class="remove-button"> Book table </button>   </div>
+        <div class="form_open"> <button routerLink="/form" class="remove-button"> Prenota Tavolo </button>   </div>
     </div>
 </div>
 </div>
