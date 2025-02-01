@@ -3,7 +3,7 @@
 notFoundmessage="La pagina del carrello è vuota!"
 resetLinkText="Vai alla pagina del menù"
 >
-
+ 
 </app-not-found>
 <div *ngIf="cart && cart.items.length > 0" class="container">
 <ul>
@@ -17,7 +17,7 @@ resetLinkText="Vai alla pagina del menù"
     </a>
    </div>
    <div>
-    <select #quantitySelect (change)="changeQuantity(cartItem,quantitySelect.value)">
+    <select [value]="cartItem.quantity"  #quantitySelect (change)="changeQuantity(cartItem,quantitySelect.value)">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>

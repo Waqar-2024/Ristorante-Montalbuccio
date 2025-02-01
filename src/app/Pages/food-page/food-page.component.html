@@ -13,8 +13,8 @@
         <div class="header">
             <span class="name">
                 {{food.name}}
-            </span>
-            <span  class="favourite {{food.favourite?'':'not'}}">
+            </span> 
+            <span #sp (click)="changeColor(sp)"  class="grey">
                 <mat-icon>favorite</mat-icon>
             </span>
         </div>

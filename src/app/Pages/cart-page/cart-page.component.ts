@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {  Component } from '@angular/core';
 import { CartService } from '../../core/Models/Services/cart/cart.service';
 import { Cart } from '../../core/Models/cart';
 import { CartItem } from '../../core/Models/cartItem';
@@ -31,6 +31,7 @@ changeQuantity(cartItem:CartItem,quantityInString:string){
 const quantity=parseInt(quantityInString)
 this.cartService.changeQuantity(cartItem.food.id,quantity);
 this.setCart();
+
 }
 
 setCart(){

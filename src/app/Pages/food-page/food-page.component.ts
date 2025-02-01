@@ -33,5 +33,9 @@ addToCart(){
   this.router.navigateByUrl('/cart-page')
 }
 
+// heart change color
+changeColor(span:HTMLElement){
+  span.style.color='red'
+}
   
 }

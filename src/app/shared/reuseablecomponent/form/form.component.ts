@@ -44,8 +44,8 @@ submit_Form(form: NgForm) {
       res => {
        alert('your order recieved successfully')
         console.log("component- ", res);
+        this.cart.clearCart();
         this.router.navigate(['/']);
-        window.location.reload();
       },
       error => {
         alert("Your order not sent successfully")
