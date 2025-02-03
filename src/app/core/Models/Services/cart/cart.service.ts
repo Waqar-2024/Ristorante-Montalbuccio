@@ -54,7 +54,8 @@ export class CartService {
       data: form_data.date, total_price: this.cart.totalPrice, items: this.cart.items
     }
 
-    return this.http.post('http://localhost:3000/api/book-order', sent_dta_admin);
+    return this.http.post('https://risturantemontalbuccioserver.onrender.com/api/book-order', sent_dta_admin);
+
   }
 
   // Reset cart to its initial state
