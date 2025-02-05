@@ -42,13 +42,13 @@ submit_Form(form: NgForm) {
   this.cart.clientData(this.form_data)
     .subscribe(
       res => {
-       alert('your order recieved successfully')
+       alert('Il tuo ordine è stato ricevuto con successo.')
         console.log("component- ", res);
         this.cart.clearCart();
         this.router.navigate(['/']);
       },
       error => {
-        alert("Your order not sent successfully")
+        alert("Si è verificato un errore. Riprova più tardi.")
         console.error("Error occurred:", error);
       }
     );
